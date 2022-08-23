@@ -27,7 +27,9 @@ ul{
 }
 .card img{
    height: 250px;
-   background: #182453;
+   /* background: #182453; */
+   background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(65,52,191,1) 49%, rgba(37,30,98,1) 100%);
 }
 .card-body{
     background-color:#0D0D0D;
@@ -66,4 +68,21 @@ footer {
     text-align: center;
     color: #f1f1f1;
     border-top: 1px solid #fff;
+}
+.selected{
+    height: 350px;
+}
+
+.header-text-h1 {
+    font-size: 40px;
+    color: orange;
+}
+
+.underline{
+    background: unset !important;
+    height: unset !important;
+}
+
+.justify-content-between span{
+    font-style: 20px !important;
 }
