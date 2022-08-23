@@ -5,15 +5,14 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <title>IPL team selection</title>
+  <title>IPL Team Selection</title>
 </head>
 
 <body>
+  <!-- Header Start  -->
   <header class=" height ">
     <div class="container ">
       <div class="d-flex ">
@@ -39,6 +38,9 @@
 
     </div>
   </header>
+  <!-- Header End  -->
+
+  <!-- Main Start  -->
   <main class="bg-dark">
     <div class="container">
       <div class="row py-5" id="-delegate">
@@ -68,7 +70,7 @@
                       <h5> Nov 05, 1988</h5>
                     </div>
                   </div>
-                  <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) " >ADD PPLAYER</button>
+                  <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
                 </div>
               </div>
             </div>
@@ -98,7 +100,7 @@
                       <h5> Apr 30, 1987</h5>
                     </div>
                   </div>
-                  <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
+                  <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
                 </div>
               </div>
             </div>
@@ -128,7 +130,7 @@
                       <h5> Dec 06, 1993</h5>
                     </div>
                   </div>
-                  <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
+                  <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
                 </div>
               </div>
             </div>
@@ -143,8 +145,8 @@
                   <h3 class="text-center">ADD PPLAYER - <span id="pleyers-numbers">0</span></h3>
                   <img src="image/underLine.svg" alt="" class="underline">
                   <ul id="add-pleyers-names">
-                   
-               
+
+
                   </ul>
                 </div>
               </div>
@@ -182,7 +184,7 @@
                         <h5> Sep 17, 1986</h5>
                       </div>
                     </div>
-                    <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
+                    <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
                   </div>
                 </div>
               </div>
@@ -212,7 +214,7 @@
                         <h5> Dec 06, 1988</h5>
                       </div>
                     </div>
-                    <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
+                    <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
                   </div>
                 </div>
               </div>
@@ -242,7 +244,7 @@
                         <h5> Jan 25, 1988</h5>
                       </div>
                     </div>
-                    <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
+                    <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
                   </div>
                 </div>
               </div>
@@ -259,248 +261,253 @@
                     <div class="d-flex justify-content-between align-items-center my-3">
                       <span>Per Player</span>
                       <input type="text" class="form-control w-50" id="player-money">
-                    </div> 
+                    </div>
 
 
-                    <button class="btn btn-lg   btn-primary "  id="player-money-cal" ">Calculate</button>
+                    <button class="btn btn-lg   btn-primary " id="player-money-cal" ">Calculate</button>
 
-                    <div class="d-flex justify-content-between align-items-center my-3">
+                    <div class=" d-flex justify-content-between align-items-center my-3">
                       <span>Player Expenses</span>
                       <h6>$<span id="total-amount-plerys">0</span></h6>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center my-3">
-                      <span>Manager</span>
-                      <input type="text" class="form-control w-50" id="manager">
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center my-3 ">
-                      <span>Coach</span>
-                      <input type="text" class="form-control w-50" id="coach">
-                    </div>
-
-
-                    <button class="btn btn-lg   btn-primary my-3" id="all-total-cal">Calculate Total</button>
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                      <span>Total</span>
-                      <h3 class="text-danger">$<span id="all-total-amount-ipl">0</span></h3>
-                    </div>
-
                   </div>
+                  <div class="d-flex justify-content-between align-items-center my-3">
+                    <span>Manager</span>
+                    <input type="text" class="form-control w-50" id="manager">
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center my-3 ">
+                    <span>Coach</span>
+                    <input type="text" class="form-control w-50" id="coach">
+                  </div>
+
+
+                  <button class="btn btn-lg   btn-primary my-3" id="all-total-cal">Calculate Total</button>
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <span>Total</span>
+                    <h3 class="text-danger">$<span id="all-total-amount-ipl">0</span></h3>
+                  </div>
+
                 </div>
               </div>
-            </aside>
-
-
           </div>
+          </aside>
+
+
         </div>
-        <div class="row ">
-          <div class="col-md-9">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card"">
+      </div>
+      <div class="row ">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card"">
               <img src=" image/saha.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-center">
-                      WRIDDHIMAN
-                      Saha
-                    </h4>
-                    <div class="profile-des">
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Role :</span>
-                        <h5>Wicket-keeper Batsman</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Batting Style : </span>
-                        <h5>Right-hand Bat</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Bowling Style : </span>
-                        <h5>-</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center mb-0">
-                        <span>DOB :</span>
-                        <h5> Oct 24, 1984</h5>
-                      </div>
+                <div class="card-body">
+                  <h4 class="card-title text-center">
+                    WRIDDHIMAN
+                    Saha
+                  </h4>
+                  <div class="profile-des">
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Role :</span>
+                      <h5>Wicket-keeper Batsman</h5>
                     </div>
-                    <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Batting Style : </span>
+                      <h5>Right-hand Bat</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Bowling Style : </span>
+                      <h5>-</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center mb-0">
+                      <span>DOB :</span>
+                      <h5> Oct 24, 1984</h5>
+                    </div>
                   </div>
+                  <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card"">
+            </div>
+            <div class="col-md-4">
+              <div class="card"">
               <img src=" image/kumar.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-center">
-                      BHUVNESHWAR
-                      Kumar
-                    </h4>
-                    <div class="profile-des">
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Role :</span>
-                        <h5>Bowler</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Batting Style : </span>
-                        <h5>Right-hand Bat</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Bowling Style : </span>
-                        <h5>Right-arm Fast</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center mb-0">
-                        <span>DOB :</span>
-                        <h5> Dec 05, 1990</h5>
-                      </div>
+                <div class="card-body">
+                  <h4 class="card-title text-center">
+                    BHUVNESHWAR
+                    Kumar
+                  </h4>
+                  <div class="profile-des">
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Role :</span>
+                      <h5>Bowler</h5>
                     </div>
-                    <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Batting Style : </span>
+                      <h5>Right-hand Bat</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Bowling Style : </span>
+                      <h5>Right-arm Fast</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center mb-0">
+                      <span>DOB :</span>
+                      <h5> Dec 05, 1990</h5>
+                    </div>
                   </div>
+                  <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card"">
+            </div>
+            <div class="col-md-4">
+              <div class="card"">
               <img src=" image/yadav.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-center">UMESH
-                      Yadav
-                    </h4>
-                    <div class="profile-des">
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Role :</span>
-                        <h5>Bowler</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Batting Style : </span>
-                        <h5>Right-hand Bat</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Bowling Style : </span>
-                        <h5>Right-arm Fast</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center mb-0">
-                        <span>DOB :</span>
-                        <h5> Oct 25, 1987</h5>
-                      </div>
+                <div class="card-body">
+                  <h4 class="card-title text-center">UMESH
+                    Yadav
+                  </h4>
+                  <div class="profile-des">
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Role :</span>
+                      <h5>Bowler</h5>
                     </div>
-                    <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Batting Style : </span>
+                      <h5>Right-hand Bat</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Bowling Style : </span>
+                      <h5>Right-arm Fast</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center mb-0">
+                      <span>DOB :</span>
+                      <h5> Oct 25, 1987</h5>
+                    </div>
                   </div>
+                  <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
                 </div>
               </div>
             </div>
-
-          </div>
-
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-9">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card"">
-              <img src=" image/kuldeep.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-center">KULDEEP
-                      Yadav
-                    </h4>
-                    <div class="profile-des">
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Role :</span>
-                        <h5>Bowler</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Batting Style : </span>
-                        <h5>Left-hand Bat</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Bowling Style : </span>
-                        <h5>Left-arm Wrist Spin</h5>
-                      </div>
-
-                      <div class="profile-text d-flex align-items-center mb-0">
-                        <span>DOB :</span>
-                        <h5> Dec 14, 1991</h5>
-                      </div>
-                    </div>
-                    <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card"">
-              <img src=" image/saini.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-center">NAVDEEP
-                      Saini
-                    </h4>
-                    <div class="profile-des">
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Role :</span>
-                        <h5>Bowler</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Batting Style : </span>
-                        <h5>Right-hand Bat</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Bowling Style : </span>
-                        <h5>Right-arm Medium </h5>
-                        </h4>
-                      </div>
-                      <div class="profile-text d-flex align-items-center mb-0">
-                        <span>DOB :</span>
-                        <h5> Nov 23, 1992</h5>
-                      </div>
-                    </div>
-                    <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card"">
-              <img src=" image/deepka.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-center">
-                      DEEPAK
-                      Chahar
-                    </h4>
-                    <div class="profile-des">
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Role :</span>
-                        <h5>Bowler</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Batting Style : </span>
-                        <h5>Right-hand Bat</h5>
-                      </div>
-                      <div class="profile-text d-flex align-items-center">
-                        <span>Bowling Style : </span>
-                        <h5>Right-arm Medium </h5>
-                        </h4>
-                      </div>
-
-                      <div class="profile-text d-flex align-items-center mb-0">
-                        <span>DOB :</span>
-                        <h5> Aug 07, 1992</h5>
-                      </div>
-                    </div>
-                    <button class="btn btn-lg   btn-primary "  onclick="pleyerName(this) ">ADD PPLAYER</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
 
         </div>
 
       </div>
+      <div class="row mt-5">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card"">
+              <img src=" image/kuldeep.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center">KULDEEP
+                    Yadav
+                  </h4>
+                  <div class="profile-des">
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Role :</span>
+                      <h5>Bowler</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Batting Style : </span>
+                      <h5>Left-hand Bat</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Bowling Style : </span>
+                      <h5>Left-arm Wrist Spin</h5>
+                    </div>
+
+                    <div class="profile-text d-flex align-items-center mb-0">
+                      <span>DOB :</span>
+                      <h5> Dec 14, 1991</h5>
+                    </div>
+                  </div>
+                  <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card"">
+              <img src=" image/saini.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center">NAVDEEP
+                    Saini
+                  </h4>
+                  <div class="profile-des">
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Role :</span>
+                      <h5>Bowler</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Batting Style : </span>
+                      <h5>Right-hand Bat</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Bowling Style : </span>
+                      <h5>Right-arm Medium </h5>
+                      </h4>
+                    </div>
+                    <div class="profile-text d-flex align-items-center mb-0">
+                      <span>DOB :</span>
+                      <h5> Nov 23, 1992</h5>
+                    </div>
+                  </div>
+                  <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card"">
+              <img src=" image/deepka.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-center">
+                    DEEPAK
+                    Chahar
+                  </h4>
+                  <div class="profile-des">
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Role :</span>
+                      <h5>Bowler</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Batting Style : </span>
+                      <h5>Right-hand Bat</h5>
+                    </div>
+                    <div class="profile-text d-flex align-items-center">
+                      <span>Bowling Style : </span>
+                      <h5>Right-arm Medium </h5>
+                      </h4>
+                    </div>
+
+                    <div class="profile-text d-flex align-items-center mb-0">
+                      <span>DOB :</span>
+                      <h5> Aug 07, 1992</h5>
+                    </div>
+                  </div>
+                  <button class="btn btn-lg   btn-primary " onclick="pleyerName(this) ">ADD PPLAYER</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
     </div>
   </main>
-  <footer class="bg-dark">
-    <p >Copyright @ 2022 All Rights Reserved.</p>
-  </footer>
-  
+  <!-- Main End  -->
 
+  <!-- Footer Start  -->
+  <footer class="bg-dark">
+    <p>Copyright @ 2022 All Rights Reserved.</p>
+  </footer>
+  <!-- Footer End  -->
+
+  <!-- JS Start -->
   <script src="js/utility.js"></script>
+  <!-- Main JS  -->
   <script src="js/main.js"></script>
- 
+  <!-- JS End -->
 </body>
 
 </html>

@@ -1,10 +1,12 @@
+/* ********header CSS********* */
 .height{
     height: 450px ;
     background-color: #111;
     padding-top: 40px;
- 
-    
+
 }
+
+
 ul{
     list-style: none !important;
 }
@@ -27,7 +29,6 @@ ul{
 }
 .card img{
    height: 250px;
-   /* background: #182453; */
    background: rgb(2,0,36);
 background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(65,52,191,1) 49%, rgba(37,30,98,1) 100%);
 }

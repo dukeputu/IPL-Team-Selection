@@ -1,4 +1,4 @@
-
+//Player Expenses Calculate 
 document.getElementById('player-money-cal').addEventListener('click', function () {
     const inputAmounts = getAllInputsValues('player-money');
     if (isNaN(inputAmounts)) {
@@ -12,7 +12,7 @@ document.getElementById('player-money-cal').addEventListener('click', function (
 
 })
 
-
+//All Calculate Total
 document.getElementById('all-total-cal').addEventListener('click', function () {
     const getValuePlerysTotal = getInputsInnerText('total-amount-plerys');
     const getValueManager = getAllInputsValues('manager');
@@ -31,7 +31,7 @@ document.getElementById('all-total-cal').addEventListener('click', function () {
 
 
 })
-
+// this main array 
 const nameArray = [];
 
 function getNameArray(name) {
@@ -52,30 +52,22 @@ function getNameArray(name) {
 }
 
 /* document.getElementById('event-delegate').addEventListener('click', function (event) {
-
     const getParent = event.target.parentNode.childNodes.item(1).innerText;
     const playerNames = getParent;
-  
-        nameArray.push(playerNames);
-
+          nameArray.push(playerNames);
         if (nameArray.length > 5) {
             alert('hi')
             error
 
         }
-
         document.getElementById('pleyers-numbers').innerText = nameArray.length;
 
         getNameArray(nameArray);
 
         pleyersAmount(nameArray);
-
-
-
-
 }) */
 
-
+// Get plerys in a array
 function pleyerName(playerBtn) {
     const playerNames = playerBtn.parentNode.children[0].innerText;
     nameArray.push(playerNames);
